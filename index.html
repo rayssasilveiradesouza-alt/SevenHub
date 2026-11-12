@@ -1,0 +1,610 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2113.65">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000; min-height: 14.0px}
+    span.s1 {font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
+<p class="p1"><span class="s1">&lt;html lang="pt-BR"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;head&gt;</span></p>
+<p class="p1"><span class="s1">&lt;meta charset="UTF-8"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;title&gt;Hub Publicidade Uni7&lt;/title&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;style&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">*{</span></p>
+<p class="p1"><span class="s1">margin:0;</span></p>
+<p class="p1"><span class="s1">padding:0;</span></p>
+<p class="p1"><span class="s1">box-sizing:border-box;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">html{</span></p>
+<p class="p1"><span class="s1">scroll-behavior:smooth;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">body{</span></p>
+<p class="p1"><span class="s1">font-family:'Inter',sans-serif;</span></p>
+<p class="p1"><span class="s1">background:#f8f9fb;</span></p>
+<p class="p1"><span class="s1">color:#111827;</span></p>
+<p class="p1"><span class="s1">line-height:1.6;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.container{</span></p>
+<p class="p1"><span class="s1">width:min(1200px,90%);</span></p>
+<p class="p1"><span class="s1">margin:auto;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">nav{</span></p>
+<p class="p1"><span class="s1">position:fixed;</span></p>
+<p class="p1"><span class="s1">top:0;</span></p>
+<p class="p1"><span class="s1">width:100%;</span></p>
+<p class="p1"><span class="s1">background:#ffffffee;</span></p>
+<p class="p1"><span class="s1">backdrop-filter:blur(10px);</span></p>
+<p class="p1"><span class="s1">border-bottom:1px solid #e5e7eb;</span></p>
+<p class="p1"><span class="s1">z-index:1000;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.nav-content{</span></p>
+<p class="p1"><span class="s1">display:flex;</span></p>
+<p class="p1"><span class="s1">justify-content:space-between;</span></p>
+<p class="p1"><span class="s1">align-items:center;</span></p>
+<p class="p1"><span class="s1">padding:18px 0;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.logo{</span></p>
+<p class="p1"><span class="s1">font-size:1.1rem;</span></p>
+<p class="p1"><span class="s1">font-weight:800;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.menu{</span></p>
+<p class="p1"><span class="s1">display:flex;</span></p>
+<p class="p1"><span class="s1">gap:24px;</span></p>
+<p class="p1"><span class="s1">list-style:none;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.menu a{</span></p>
+<p class="p1"><span class="s1">text-decoration:none;</span></p>
+<p class="p1"><span class="s1">color:#374151;</span></p>
+<p class="p1"><span class="s1">font-weight:500;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.menu a:hover{</span></p>
+<p class="p1"><span class="s1">color:black;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">section{</span></p>
+<p class="p1"><span class="s1">padding:100px 0;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.hero{</span></p>
+<p class="p1"><span class="s1">padding-top:150px;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.hero-grid{</span></p>
+<p class="p1"><span class="s1">display:grid;</span></p>
+<p class="p1"><span class="s1">grid-template-columns:1fr 1fr;</span></p>
+<p class="p1"><span class="s1">gap:50px;</span></p>
+<p class="p1"><span class="s1">align-items:center;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.hero h1{</span></p>
+<p class="p1"><span class="s1">font-size:clamp(2.5rem,5vw,4rem);</span></p>
+<p class="p1"><span class="s1">line-height:1.1;</span></p>
+<p class="p1"><span class="s1">margin-bottom:20px;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.hero p{</span></p>
+<p class="p1"><span class="s1">font-size:1.1rem;</span></p>
+<p class="p1"><span class="s1">color:#6b7280;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.actions{</span></p>
+<p class="p1"><span class="s1">display:flex;</span></p>
+<p class="p1"><span class="s1">gap:16px;</span></p>
+<p class="p1"><span class="s1">margin-top:30px;</span></p>
+<p class="p1"><span class="s1">flex-wrap:wrap;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.btn{</span></p>
+<p class="p1"><span class="s1">padding:14px 24px;</span></p>
+<p class="p1"><span class="s1">border-radius:12px;</span></p>
+<p class="p1"><span class="s1">border:none;</span></p>
+<p class="p1"><span class="s1">cursor:pointer;</span></p>
+<p class="p1"><span class="s1">font-weight:600;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.btn-primary{</span></p>
+<p class="p1"><span class="s1">background:#111827;</span></p>
+<p class="p1"><span class="s1">color:white;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.btn-secondary{</span></p>
+<p class="p1"><span class="s1">background:white;</span></p>
+<p class="p1"><span class="s1">border:1px solid #d1d5db;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.placeholder{</span></p>
+<p class="p1"><span class="s1">height:420px;</span></p>
+<p class="p1"><span class="s1">background:#d9d9d9;</span></p>
+<p class="p1"><span class="s1">border-radius:24px;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.stats{</span></p>
+<p class="p1"><span class="s1">display:grid;</span></p>
+<p class="p1"><span class="s1">grid-template-columns:repeat(4,1fr);</span></p>
+<p class="p1"><span class="s1">gap:20px;</span></p>
+<p class="p1"><span class="s1">margin-top:50px;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.stat{</span></p>
+<p class="p1"><span class="s1">background:white;</span></p>
+<p class="p1"><span class="s1">padding:24px;</span></p>
+<p class="p1"><span class="s1">border-radius:16px;</span></p>
+<p class="p1"><span class="s1">text-align:center;</span></p>
+<p class="p1"><span class="s1">box-shadow:0 4px 20px rgba(0,0,0,.05);</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.stat h2{</span></p>
+<p class="p1"><span class="s1">font-size:2rem;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.section-title{</span></p>
+<p class="p1"><span class="s1">font-size:2.4rem;</span></p>
+<p class="p1"><span class="s1">margin-bottom:12px;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.section-description{</span></p>
+<p class="p1"><span class="s1">color:#6b7280;</span></p>
+<p class="p1"><span class="s1">margin-bottom:40px;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.cards{</span></p>
+<p class="p1"><span class="s1">display:grid;</span></p>
+<p class="p1"><span class="s1">grid-template-columns:repeat(auto-fit,minmax(280px,1fr));</span></p>
+<p class="p1"><span class="s1">gap:24px;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.card{</span></p>
+<p class="p1"><span class="s1">background:white;</span></p>
+<p class="p1"><span class="s1">padding:24px;</span></p>
+<p class="p1"><span class="s1">border-radius:20px;</span></p>
+<p class="p1"><span class="s1">box-shadow:0 4px 20px rgba(0,0,0,.05);</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.card-image{</span></p>
+<p class="p1"><span class="s1">height:180px;</span></p>
+<p class="p1"><span class="s1">background:#d9d9d9;</span></p>
+<p class="p1"><span class="s1">border-radius:14px;</span></p>
+<p class="p1"><span class="s1">margin-bottom:16px;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.card h3{</span></p>
+<p class="p1"><span class="s1">margin-bottom:10px;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.badges{</span></p>
+<p class="p1"><span class="s1">display:flex;</span></p>
+<p class="p1"><span class="s1">flex-wrap:wrap;</span></p>
+<p class="p1"><span class="s1">gap:8px;</span></p>
+<p class="p1"><span class="s1">margin-top:16px;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.badge{</span></p>
+<p class="p1"><span class="s1">background:#f3f4f6;</span></p>
+<p class="p1"><span class="s1">padding:8px 12px;</span></p>
+<p class="p1"><span class="s1">border-radius:999px;</span></p>
+<p class="p1"><span class="s1">font-size:0.9rem;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.profile{</span></p>
+<p class="p1"><span class="s1">display:grid;</span></p>
+<p class="p1"><span class="s1">grid-template-columns:320px 1fr;</span></p>
+<p class="p1"><span class="s1">gap:40px;</span></p>
+<p class="p1"><span class="s1">align-items:start;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.profile-photo{</span></p>
+<p class="p1"><span class="s1">aspect-ratio:1;</span></p>
+<p class="p1"><span class="s1">background:#d9d9d9;</span></p>
+<p class="p1"><span class="s1">border-radius:24px;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.skills{</span></p>
+<p class="p1"><span class="s1">display:flex;</span></p>
+<p class="p1"><span class="s1">flex-wrap:wrap;</span></p>
+<p class="p1"><span class="s1">gap:10px;</span></p>
+<p class="p1"><span class="s1">margin-top:20px;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.skill{</span></p>
+<p class="p1"><span class="s1">padding:10px 14px;</span></p>
+<p class="p1"><span class="s1">background:#f3f4f6;</span></p>
+<p class="p1"><span class="s1">border-radius:999px;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.form-box{</span></p>
+<p class="p1"><span class="s1">margin-top:40px;</span></p>
+<p class="p1"><span class="s1">background:white;</span></p>
+<p class="p1"><span class="s1">padding:30px;</span></p>
+<p class="p1"><span class="s1">border-radius:20px;</span></p>
+<p class="p1"><span class="s1">box-shadow:0 4px 20px rgba(0,0,0,.05);</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.form-box h3{</span></p>
+<p class="p1"><span class="s1">margin-bottom:20px;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">input,</span></p>
+<p class="p1"><span class="s1">textarea{</span></p>
+<p class="p1"><span class="s1">width:100%;</span></p>
+<p class="p1"><span class="s1">padding:16px;</span></p>
+<p class="p1"><span class="s1">border-radius:12px;</span></p>
+<p class="p1"><span class="s1">border:1px solid #d1d5db;</span></p>
+<p class="p1"><span class="s1">margin-bottom:14px;</span></p>
+<p class="p1"><span class="s1">font-family:inherit;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">textarea{</span></p>
+<p class="p1"><span class="s1">resize:vertical;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">footer{</span></p>
+<p class="p1"><span class="s1">padding:50px 0;</span></p>
+<p class="p1"><span class="s1">text-align:center;</span></p>
+<p class="p1"><span class="s1">color:#6b7280;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">@media(max-width:768px){</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.hero-grid,</span></p>
+<p class="p1"><span class="s1">.profile{</span></p>
+<p class="p1"><span class="s1">grid-template-columns:1fr;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.menu{</span></p>
+<p class="p1"><span class="s1">gap:12px;</span></p>
+<p class="p1"><span class="s1">font-size:14px;</span></p>
+<p class="p1"><span class="s1">overflow:auto;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.stats{</span></p>
+<p class="p1"><span class="s1">grid-template-columns:1fr 1fr;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.hero{</span></p>
+<p class="p1"><span class="s1">padding-top:130px;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/style&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;body&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;nav&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="container nav-content"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="logo"&gt;</span></p>
+<p class="p1"><span class="s1">Hub Publicidade Uni7</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;ul class="menu"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;li&gt;&lt;a href="#inicio"&gt;Início&lt;/a&gt;&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1">&lt;li&gt;&lt;a href="#portfolio"&gt;Portfólio&lt;/a&gt;&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1">&lt;li&gt;&lt;a href="#oportunidades"&gt;Oportunidades&lt;/a&gt;&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1">&lt;li&gt;&lt;a href="#colaboradores"&gt;Colaboradores&lt;/a&gt;&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1">&lt;li&gt;&lt;a href="#perfil"&gt;Perfil&lt;/a&gt;&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/ul&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/nav&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;section id="inicio" class="hero"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="container"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="hero-grid"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;h1&gt;Transforme trabalhos acadêmicos em oportunidades reais.&lt;/h1&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;p&gt;</span></p>
+<p class="p1"><span class="s1">A plataforma da Publicidade Uni7 que conecta portfólios,</span></p>
+<p class="p1"><span class="s1">talentos criativos e oportunidades de estágio,</span></p>
+<p class="p1"><span class="s1">freela e colaboração.</span></p>
+<p class="p1"><span class="s1">&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="actions"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;button class="btn btn-primary"&gt;Criar meu Portfólio&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1">&lt;button class="btn btn-secondary"&gt;Explorar Oportunidades&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="placeholder"&gt;&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="stats"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="stat"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;h2&gt;250+&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p&gt;Projetos Publicados&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="stat"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;h2&gt;80+&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p&gt;Alunos Ativos&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="stat"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;h2&gt;35+&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p&gt;Oportunidades&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="stat"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;h2&gt;120+&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p&gt;Conexões Criadas&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;section id="portfolio"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="container"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;h2 class="section-title"&gt;</span></p>
+<p class="p1"><span class="s1">Portfólio</span></p>
+<p class="p1"><span class="s1">&lt;/h2&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;p class="section-description"&gt;</span></p>
+<p class="p1"><span class="s1">Projetos que contam sua trajetória profissional.</span></p>
+<p class="p1"><span class="s1">&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="cards"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="card"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="card-image"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;h3&gt;Campanha Ambiental&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p&gt;Planejamento + Social Media&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="card"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="card-image"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;h3&gt;Rebranding Cafeteria&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p&gt;Branding + Direção de Arte&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="card"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="card-image"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;h3&gt;Vídeo Institucional&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p&gt;Audiovisual + Motion&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="card"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="card-image"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;h3&gt;Plano de Conteúdo&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p&gt;Marketing Digital&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;section id="oportunidades"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="container"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;h2 class="section-title"&gt;</span></p>
+<p class="p1"><span class="s1">Oportunidades</span></p>
+<p class="p1"><span class="s1">&lt;/h2&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;p class="section-description"&gt;</span></p>
+<p class="p1"><span class="s1">Encontre estágios, freelas e projetos compartilhados pela comunidade.</span></p>
+<p class="p1"><span class="s1">&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="cards"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="card"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;h3&gt;Estágio em Social Media&lt;/h3&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;p&gt;</span></p>
+<p class="p1"><span class="s1">Empresa parceira busca estudante para criação de conteúdo digital.</span></p>
+<p class="p1"><span class="s1">&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="badges"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="badge"&gt;Canva&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="badge"&gt;Instagram&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="badge"&gt;Copywriting&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;br&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;button class="btn btn-primary"&gt;</span></p>
+<p class="p1"><span class="s1">Tenho Interesse</span></p>
+<p class="p1"><span class="s1">&lt;/button&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="card"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;h3&gt;Criação de Identidade Visual&lt;/h3&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;p&gt;</span></p>
+<p class="p1"><span class="s1">Projeto freelancer para desenvolvimento de marca.</span></p>
+<p class="p1"><span class="s1">&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="badges"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="badge"&gt;Illustrator&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="badge"&gt;Branding&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;br&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;button class="btn btn-primary"&gt;</span></p>
+<p class="p1"><span class="s1">Tenho Interesse</span></p>
+<p class="p1"><span class="s1">&lt;/button&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="card"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;h3&gt;Projeto Integrado de Campanha&lt;/h3&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;p&gt;</span></p>
+<p class="p1"><span class="s1">Equipe procura videomaker para campanha audiovisual.</span></p>
+<p class="p1"><span class="s1">&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="badges"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="badge"&gt;Premiere&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="badge"&gt;Captação&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;br&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;button class="btn btn-primary"&gt;</span></p>
+<p class="p1"><span class="s1">Tenho Interesse</span></p>
+<p class="p1"><span class="s1">&lt;/button&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;section id="colaboradores"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="container"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;h2 class="section-title"&gt;</span></p>
+<p class="p1"><span class="s1">Colaboradores</span></p>
+<p class="p1"><span class="s1">&lt;/h2&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;p class="section-description"&gt;</span></p>
+<p class="p1"><span class="s1">Encontre o talento que falta para o seu próximo projeto.</span></p>
+<p class="p1"><span class="s1">&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="cards"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="card"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="card-image"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;h3&gt;Ana Souza&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p&gt;Direção de Arte • Branding&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="card"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="card-image"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;h3&gt;Pedro Lima&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p&gt;Motion Designer • After Effects&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="card"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="card-image"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;h3&gt;Mariana Costa&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p&gt;Redação • Storytelling&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;section id="perfil"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="container"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;h2 class="section-title"&gt;</span></p>
+<p class="p1"><span class="s1">Meu Perfil</span></p>
+<p class="p1"><span class="s1">&lt;/h2&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="profile"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="profile-photo"&gt;&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;h3&gt;Gabriel Oliveira&lt;/h3&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;p&gt;</span></p>
+<p class="p1"><span class="s1">7º semestre • Publicidade e Propaganda</span></p>
+<p class="p1"><span class="s1">&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;br&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;p&gt;</span></p>
+<p class="p1"><span class="s1">Apaixonado por branding, design e comunicação digital.</span></p>
+<p class="p1"><span class="s1">Busco oportunidades para desenvolver projetos criativos</span></p>
+<p class="p1"><span class="s1">e ampliar minha experiência profissional.</span></p>
+<p class="p1"><span class="s1">&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="skills"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;span class="skill"&gt;Photoshop&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="skill"&gt;Illustrator&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="skill"&gt;Figma&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="skill"&gt;Canva&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="skill"&gt;Branding&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="skill"&gt;Social Media&lt;/span&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="form-box"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;h3&gt;Demonstrar Interesse&lt;/h3&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;input type="text" placeholder="Nome"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;input type="text" placeholder="Semestre"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;input type="text" placeholder="Vaga de interesse"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;textarea rows="5" placeholder="Por que você tem interesse nesta oportunidade?"&gt;&lt;/textarea&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;input type="url" placeholder="Link para trabalho relacionado"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;button class="btn btn-primary"&gt;</span></p>
+<p class="p1"><span class="s1">Enviar candidatura</span></p>
+<p class="p1"><span class="s1">&lt;/button&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;footer&gt;</span></p>
+<p class="p1"><span class="s1">Hub Publicidade Uni7 • MVP de Plataforma de Carreira</span></p>
+<p class="p1"><span class="s1">&lt;/footer&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+</body>
+</html>
